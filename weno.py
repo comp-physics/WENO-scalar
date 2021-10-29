@@ -1,8 +1,6 @@
 import numpy as np
-# from numba import njit
 
 
-# @njit
 def get_coeffs(order: int):
     # Coefficients of order r=2
     # On smooth solutions this should converge with order r=3
@@ -57,7 +55,6 @@ def get_coeffs(order: int):
     return C, a, sigma
 
 
-# @njit
 def reconstruct(order, q):
     """
     Do WENO reconstruction
