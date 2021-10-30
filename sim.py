@@ -23,6 +23,8 @@ class Simulation(params.Params):
     def physical_flux(self, q):
         if self.problem == "burgers":
             return 0.5 * q ** 2
+        elif self.problem == "advection":
+            return q
         else:
             raise NotImplementedError
 
